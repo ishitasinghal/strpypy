@@ -19,3 +19,9 @@ pqr.mno
 Output:
 much.very.program.this.like.i
 mno.pqr
+
+#CODE
+
+sample = "my.name.is.ishita"
+new = sample.split('.')
+print(new[:-1])
