@@ -24,4 +24,5 @@ mno.pqr
 
 sample = "my.name.is.ishita"
 new = sample.split('.')
-print(new[::-1])
+new2 = new[::-1]
+print('.'.join(new2))
