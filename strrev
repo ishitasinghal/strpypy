@@ -22,7 +22,10 @@ mno.pqr
 
 #CODE
 
-sample = "my.name.is.ishita"
-new = sample.split('.')
-new2 = new[::-1]
-print('.'.join(new2))
+testcases = input()
+for i in range(int(testcases)):
+    sample = input()
+    new = sample.split('.')
+    new2 = new[::-1]
+    print('.'.join(new2))
+    
