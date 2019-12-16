@@ -23,10 +23,12 @@ ABGS ABSG AGBS AGSB ASBG ASGB BAGS BASG BGAS BGSA BSAG BSGA GABS GASB GBAS GBSA 
 #CODE
 
 from itertools import permutations
-string = "CBA"
-list1 = permutations(string) 
-list2=[]
-for i in list1:
-    r = (''.join(i))
-    list2.append(r)
-print(' '.join(sorted(list2)))
+tc = input()
+for i in range(int(tc)):
+    string = input()
+    list1 = permutations(string) 
+    list2=[]
+    for i in list1:
+        r = (''.join(i))
+        list2.append(r)
+    print(' '.join(sorted(list2)))
