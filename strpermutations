@@ -27,4 +27,4 @@ string = "CBA"
 list1 = permutations(string) 
 #print(''.join()))
 for i in list1:
-    print(''.join(sorted(i))
+    print(''.join(sorted(i)))
