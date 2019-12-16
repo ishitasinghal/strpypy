@@ -29,3 +29,4 @@ list2=[]
 for i in list1:
     r = (''.join(i))
     list2.append(r)
+print(sorted(list2))
