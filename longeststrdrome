@@ -23,5 +23,4 @@ aabbaa
 #CODE
 
 string = "aaaabbaa"
-for i in string:
-    print(i)
+print(string[::-1])
