@@ -23,4 +23,7 @@ aabbaa
 #CODE
 
 string = "aaaabbaa"
-print(string[::-1])
+list1=[]
+for i in range(1,len(string)+1):
+    list1.append(string[:i])
+for i in range()
