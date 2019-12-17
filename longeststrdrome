@@ -22,11 +22,10 @@ aabbaa
 
 #CODE
 
-string = "abcacb"
+string = "aaaabbaa"
 list1 = [ string[i:j] for i in range(len(string)) for j in range(i+1, len(string)+1)]
 list2 = []
 for i in list1:
     if(i[0:]==i[::-1]):
         list2.append(i)
 print(max(list2, key=len))
-    
