@@ -25,5 +25,6 @@ aabbaa
 string = "aaaabbaa"
 list1=[]
 for i in range(1,len(string)+1):
-    list1.append(string[:i])
-for i in range()
+    if(string[i:]==string[:i]):
+        list1.append(string[i:])
+        print(list1)
