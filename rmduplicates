@@ -20,3 +20,9 @@ acaaabbbacdddd
 Output:
 gksforgk
 acac
+
+#CODE
+
+string = "geeksforgeek"
+for i in string:
+    if()
