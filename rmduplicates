@@ -24,5 +24,7 @@ acac
 #CODE
 
 string = "geeksforgeek"
+list1 = []
 for i in string:
-    if()
+    list1.append(string.count(i))
+print(list1)
