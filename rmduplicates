@@ -25,6 +25,5 @@ acac
 
 string = "geeksforgeek"
 list1 = []
-for i in string:
-    list1.append(string.count(i))
-print(list1)
+def rem(string):
+    string1 = 
