@@ -25,5 +25,6 @@ acac
 
 string = "geeksforgeek"
 list1 = []
-def rem(string):
-    string1 = 
+for i in range(len(string)+1):
+    if(string[i]==string[i+1]):
+        list1.append(string[i])
