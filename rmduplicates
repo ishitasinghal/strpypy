@@ -30,6 +30,7 @@ def rmdup(string):
             string[i] = string[i+1]
             i = i+1
         rmdup(string)
+    rmdup(string[1:])
     return(string)
     
 
