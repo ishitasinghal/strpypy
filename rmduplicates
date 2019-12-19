@@ -23,15 +23,18 @@ acac
 
 #CODE
 
-def rmdup(string):
-    if(string[0]==string[1]):
-        i=0
-        while(string[i] != '\0'):
-            string[i] = string[i+1]
-            i = i+1
-        rmdup(string)
-    rmdup(string[1:])
-    return(string)
+def rmdup(string): 
+    n = len(string)  
+    if (n < 2) : 
+        return
+    j = 0
+    for i in range(n):  
+        if (string[j] != string[i]): 
+            j += 1
+            string[j] = string[i]  
+    j += 1
+    string = string[:j] 
+    return string 
     
 
 string = "geeksforgeek"
