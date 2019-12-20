@@ -33,5 +33,5 @@ def rmdup(string):
     return(string[0] + rmdup(string[1:]))
 
 
-string = "geeksforgeek"
+string = "acaaabbbacdddd"
 print(rmdup(string))
