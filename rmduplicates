@@ -23,9 +23,15 @@ acac
 
 #CODE
 
-def rmdup(string): 
-   for i in range(len(string)):
-       if()
+def rmdup(string):
+    i=1
+    if(string[0]==string[1]):
+        pass
+    else:
+        nstr=""
+        nstr=nstr+rmdup(string[i:])
+        i+1
+    return(nstr)
     
 
 string = "geeksforgeek"
