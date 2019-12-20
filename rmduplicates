@@ -24,15 +24,14 @@ acac
 #CODE
 
 def rmdup(string):
-    i=1
-    if(string[0]==string[1]):
-        pass
-    else:
-        nstr=""
-        nstr=nstr+rmdup(string[i:])
-        i+1
-    return(nstr)
-    
+    if not string:
+        return ""
+    if len(string) == 1:
+        return string
+    if string[0] == string[1]:
+        return rmdup(string[1:])
+    return(string[0] + rmdup(string[1:]))
+
 
 string = "geeksforgeek"
 print(rmdup(string))
