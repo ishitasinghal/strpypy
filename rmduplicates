@@ -24,17 +24,8 @@ acac
 #CODE
 
 def rmdup(string): 
-    n = len(string)  
-    if (n < 2) : 
-        return
-    j = 0
-    for i in range(n):  
-        if (string[j] != string[i]): 
-            j += 1
-            string[j] = string[i]  
-    j += 1
-    string = string[:j] 
-    return string 
+   for i in range(len(string)):
+       if()
     
 
 string = "geeksforgeek"
