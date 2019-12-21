@@ -30,4 +30,4 @@ def rmdup(string):
     return(string)
 
 string = "geeksforgeeks"
-print(rmdup(string)
+print(rmdup(string))
