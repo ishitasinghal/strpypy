@@ -23,11 +23,13 @@ acac
 
 #CODE
 
-def rmdup(string):
-    for i in range(1,len(string)-2):
-        if(string[i]==string[i-1] or string[i]==string[i+1]):
-            string = string[0 : i : ] + string[i + 1 : :]
-    return(string)
-
+#def rmdup(string):
 string = "abbcd"
-print(rmdup(string))
+for i in range(1,len(string)-2):
+    print(string[i])
+    if(string[i]==string[i-1] or string[i]==string[i+1]):
+        string = string[0 : i : ] + string[i + 1 : :]
+print(string)
+
+
+#print(rmdup(string))
