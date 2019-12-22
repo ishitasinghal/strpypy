@@ -23,7 +23,7 @@ acac
 
 #CODE
 
-#def rmdup(string):
+Def rmdup(string):
 string = "abbcd"
 list1 = []
 for i in range(1,len(string)-2):
@@ -34,8 +34,9 @@ if(sorted(list1) == list(range(min(list1), max(list1)+1))):
     print("true")
 
 
-#print(rmdup(string))
+print(rmdup(string))
 
+Python code not updated!
 #JAVA CODE
 
 import java.util.*;
