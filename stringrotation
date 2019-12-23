@@ -17,5 +17,7 @@ by two places else print 0.
 
 a = "amazon"
 b = "azonam"
-#if(a[0:2]==b[-3:0:-1])
-print(b[len(b)-2:])
+if(a[0:2]==b[len(b)-2:]):
+    print("true")
+else:
+    print("false")
