@@ -15,10 +15,12 @@ by two places else print 0.
 
 #CODE
 
-a = "geeksforgeeks"
-b = "geeksgeeksfor"
-if(a[0:2]==b[len(b)-2:]):
-    print("true")
-else:
-    print("false")
+testcases = input()
+for i in range(int(testcases)):
+    a = input()
+    b = input()
+    if(a[0:2]==b[len(b)-2:]):
+        print(1)
+    else:
+        print(0)
 
