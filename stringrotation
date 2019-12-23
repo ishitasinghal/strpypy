@@ -15,9 +15,10 @@ by two places else print 0.
 
 #CODE
 
-a = "amazon"
-b = "azonam"
+a = "geeksforgeeks"
+b = "geeksgeeksfor"
 if(a[0:2]==b[len(b)-2:]):
     print("true")
 else:
     print("false")
+
