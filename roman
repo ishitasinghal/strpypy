@@ -13,4 +13,12 @@ For each test case in a new line print the integer representation of roman numbe
 
 #CODE
 
-rom_val = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+string = "VII"
+romandict = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+a = 0
+for i in range(len(string)):
+    if i > 0 and romandict[s[i]] > romandict[s[i - 1]]:
+        a += romandict[s[i]] - 2 * romandict[s[i - 1]]
+    else:
+        a += romandict[s[i]]
+print(a)
