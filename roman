@@ -13,13 +13,14 @@ For each test case in a new line print the integer representation of roman numbe
 
 #CODE
 
-string = "VII"
-romandict = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
-a = 0
-print(romandict[string[2]])
-for i in range(len(string)):
-    if(i > 0 and romandict[string[i]] > romandict[string[i - 1]]):
-        a += romandict[string[i]] - 2 * romandict[string[i - 1]]
-    else:
-        a += romandict[string[i]]
-print(a)
+testcases = input()
+for i in range(int(testcases)):
+    string = input()
+    romandict = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+    a = 0
+    for i in range(len(string)):
+        if(i > 0 and romandict[string[i]] > romandict[string[i - 1]]):
+            a += romandict[string[i]] - 2 * romandict[string[i - 1]]
+        else:
+            a += romandict[string[i]]
+    print(a)
