@@ -10,3 +10,7 @@ Then T test cases follow. Each test case contains a string s denoting the roman 
 Output:
 
 For each test case in a new line print the integer representation of roman number s. 
+
+#CODE
+
+rom_val = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
