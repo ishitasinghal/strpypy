@@ -15,3 +15,11 @@ Output:
 Print "YES" without quotes if the two strings are anagram else print "NO".
 
 #CODE
+
+string1 = "radhakrishna"
+string2 = "kriradshhana"
+for i in string1:
+    if(i in string2 and len(string1)==len(string2)):
+        print("ANAGRAM")
+else:
+    print("NOT AN ANAGRAM")
