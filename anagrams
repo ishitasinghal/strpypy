@@ -16,6 +16,8 @@ Print "YES" without quotes if the two strings are anagram else print "NO".
 
 #CODE
 
+#if number of testcases are given.
+
 testcases = input()
 for i in range(int(testcases)):
     string1, string2 = input().split()
