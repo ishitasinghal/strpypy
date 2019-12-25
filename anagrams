@@ -20,6 +20,10 @@ string1 = "radhakrishna"
 string2 = "kriradshhana"
 for i in string1:
     if(i in string2 and len(string1)==len(string2)):
-        print("ANAGRAM")
+        flag=1
+    else:
+        flag=0
+if(flag==1):
+    print("ANAGRAM")
 else:
     print("NOT AN ANAGRAM")
