@@ -16,14 +16,14 @@ Print "YES" without quotes if the two strings are anagram else print "NO".
 
 #CODE
 
-string1 = "radhakrishna"
-string2 = "kriradshhana"
+string1 = "geeksforgeeks"
+string2 = "forgeeksgeeks"
 for i in string1:
     if(i in string2 and len(string1)==len(string2)):
         flag=1
     else:
         flag=0
 if(flag==1):
-    print("ANAGRAM")
+    print("YES")
 else:
-    print("NOT AN ANAGRAM")
+    print("NO")
