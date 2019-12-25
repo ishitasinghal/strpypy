@@ -14,3 +14,6 @@ Output:
 For each test case print the length of longest  common substring of the two strings .
 
 #CODE
+
+string1 = "abcdgh"
+string2 = "bhcdgheh"
