@@ -14,6 +14,7 @@ Output:
 For each test case print the length of longest  common substring of the two strings .
 
 #CODE
+#for given number of testcases
 
 testcases = input()
 for i in range(len(testcases)):
