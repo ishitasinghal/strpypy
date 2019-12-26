@@ -17,7 +17,7 @@ For each test case print the length of longest  common substring of the two stri
 #for given number of testcases
 
 testcases = input()
-for i in range(len(testcases)):
+for k in range(len(testcases)):
     l1, l2 = input().split()
     string1 = input()
     string2 = input()
