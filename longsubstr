@@ -17,3 +17,6 @@ For each test case print the length of longest  common substring of the two stri
 
 string1 = "abcdgh"
 string2 = "bhcdgheh"
+res = [string1[i: j] for i in range(len(string1)) for j in range(i + 1, len(string1) + 1)] 
+for i in res:
+    print(i)
