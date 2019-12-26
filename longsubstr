@@ -15,14 +15,11 @@ For each test case print the length of longest  common substring of the two stri
 
 #CODE
 
-# string1 = "abcdgh"
-# string2 = "bhcdgheh"
-# res = [string1[i: j] for i in range(len(string1)) for j in range(i + 1, len(string1) + 1)] 
-# for i in res:
-#     if(i in string2):
-#         print("Present")
-
-a = "happy"
-b = "appy"
-if(b in a):
-    print(b)
+string1 = "abcdgh"
+string2 = "bhcdgheh"
+lenlist = []
+res = [string1[i: j] for i in range(len(string1)) for j in range(i + 1, len(string1) + 1)] 
+for i in res:
+    if(i in string2):
+        lenlist.apppend(len(i))
+print(lenlist)
