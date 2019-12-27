@@ -34,5 +34,9 @@ def fact(num):
         return num
     else:
         return(num*(fact(num-1)))
-num = 2
-print(fact(num))
+a = 9
+print(fact(a))
+b = 7
+print(fact(b))
+c = 2
+print(fact(c))
