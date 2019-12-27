@@ -26,9 +26,9 @@ for k in range(int(testcases)):
     res = [string1[i: j] for i in range(int(l1)) for j in range(i + 1, int(l1) + 1)] 
     for i in res:
         if(i in string2):
-            lenlist.append(len(i))
+            lenlist.append(len(i))      
     if(len(lenlist) == 0):        #checks for an empty list.
         print(0)
     else:
-        print(max(lenlist)) 
+        print(max(lenlist))          #prints the maximum substring
         
