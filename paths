@@ -40,16 +40,5 @@ b = 7
 print(fact(b))
 c = 2
 print(fact(c))
-res = fact(a)//(fact(b)*fact(c))def fact(num):
-    if(num==1):
-        return num
-    else:
-        return(num*(fact(num-1)))
-a = 9
-print(fact(a))
-b = 7
-print(fact(b))
-c = 2
-print(fact(c))
 res = fact(a)//(fact(b)*fact(c))
 print(res)
