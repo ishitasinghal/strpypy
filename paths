@@ -30,7 +30,7 @@ Output:
 #CODE
 
 def fact(num):
-    if(num==0):
+    if(num==1):
         return num
     else:
         return(num*(fact(num-1)))
