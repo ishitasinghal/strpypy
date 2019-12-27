@@ -30,11 +30,9 @@ Output:
 #CODE
 
 def fact(num):
-    f=1
-    if(num==0 or num==1):
-        f = 1
+    if(num==0):
+        return num
     else:
-        f = f*fact(num-1)
-    return f
-n = 2
-print(fact(n))
+        return(num*(fact(num-1)))
+num = 2
+print(fact(num))
