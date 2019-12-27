@@ -25,4 +25,7 @@ for k in range(int(testcases)):
     for i in res:
         if(i in string2):
             lenlist.append(len(i))
-    print(max(lenlist)) if lenlist else 0
+    if(lenlist == None):
+        print(0)
+    else:
+        print(max(lenlist)) 
