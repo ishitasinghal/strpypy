@@ -40,4 +40,4 @@ b = 7
 print(fact(b))
 c = 2
 print(fact(c))
-res= = fact(a)//(fact(b)*fact(c))
+res = fact(a)//(fact(b)*fact(c))
