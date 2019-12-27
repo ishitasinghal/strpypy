@@ -30,6 +30,7 @@ Output:
 #CODE
 
 def fact(num):
+    f=1
     if(num==0 or num==1):
         f = 1
     else:
