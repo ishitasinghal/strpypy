@@ -41,7 +41,9 @@ def path(n, m):
             cache[i][j] = (cache[i+1][j] + cache[i][j+1])%(pow(10,9)+7)
             
     return cache[0][0]
-
-n = 3
-m = 3
-print(path(n, m))
+    
+if __name__ == '__main__':
+    cases = int(input())
+    for _ in range(cases):
+        n, m = list(map(int, input().split()))
+        print(path(n, m))
