@@ -29,6 +29,8 @@ Output:
 
 #CODE
 
+# for a given number of testcases
+
 def path(n, m):
     possible = [[0]*m for i in range(n)]
     for i in range(n):
