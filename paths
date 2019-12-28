@@ -42,6 +42,8 @@ def path(n, m):
             
     return cache[0][0]
     
-n = 3
-m = 3
-print(path(n, m))
+testcases = input()
+for i in range(int(testcases)):
+    n = input()
+    m = input()
+    print(path(int(n), int(m)))
