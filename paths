@@ -42,8 +42,6 @@ def path(n, m):
             
     return cache[0][0]
     
-if __name__ == '__main__':
-    cases = int(input())
-    for _ in range(cases):
-        n, m = list(map(int, input().split()))
-        print(path(n, m))
+n = 3
+m = 3
+print(path(n, m))
