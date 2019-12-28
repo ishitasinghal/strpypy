@@ -30,17 +30,17 @@ Output:
 #CODE
 
 def path(n, m):
-    cache = [[0]*m for i in range(n)]
+    possible = [[0]*m for i in range(n)]
     for i in range(n):
-        cache[i][-1] = 1
+        possible[i][-1] = 1
     for i in range(m):
-        cache[-1][i] = 1
+        possible[-1][i] = 1
         
     for i in reversed(range(0, n-1)):
         for j in reversed(range(0, m-1)):
-            cache[i][j] = (cache[i+1][j] + cache[i][j+1])%(pow(10,9)+7)
+            possible[i][j] = (possible[i+1][j] + possible[i][j+1])%(pow(10,9)+7)
             
-    return cache[0][0]
+    return possible[0][0]
     
 testcases = input()
 for i in range(int(testcases)):
