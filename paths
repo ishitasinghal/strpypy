@@ -29,7 +29,7 @@ Output:
 
 #CODE
 
-def get_ans(n, m):
+def path(n, m):
     cache = [[0]*m for i in range(n)]
     for i in range(n):
         cache[i][-1] = 1
@@ -44,4 +44,4 @@ def get_ans(n, m):
 
 n = 3
 m = 3
-print(get_ans(n, m))
+print(path(n, m))
