@@ -44,6 +44,5 @@ def path(n, m):
     
 testcases = input()
 for i in range(int(testcases)):
-    n = input()
-    m = input()
+    n,m = input().split()
     print(path(int(n), int(m)))
