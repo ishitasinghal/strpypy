@@ -29,16 +29,19 @@ Output:
 
 #CODE
 
-def fact(num):
-    if(num==1):
-        return num
-    else:
-        return(num*(fact(num-1)))
-a = 9
-print(fact(a))
-b = 7
-print(fact(b))
-c = 2
-print(fact(c))
-res = fact(a)//(fact(b)*fact(c))
-print(res)
+def get_ans(n, m):
+    cache = [[0]*m for i in range(n)]
+    for i in range(n):
+        cache[i][-1] = 1
+    for i in range(m):
+        cache[-1][i] = 1
+        
+    for i in reversed(range(0, n-1)):
+        for j in reversed(range(0, m-1)):
+            cache[i][j] = (cache[i+1][j] + cache[i][j+1])%(pow(10,9)+7)
+            
+    return cache[0][0]
+
+n = 3
+m = 3
+print(get_ans(n, m))
