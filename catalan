@@ -15,3 +15,19 @@ Output:
 For each test case, in a new line print the catalan number at 
 position N.
 
+Example:
+
+Input:
+
+3
+5
+4
+10
+
+Output:
+
+42
+14
+16796
+
+#CODE
