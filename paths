@@ -48,4 +48,4 @@ testcases = input()
 for i in range(int(testcases)):
     n,m = input().split()
     print(path(int(n), int(m)))
-#print(testcases)
+
