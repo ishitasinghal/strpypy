@@ -51,7 +51,9 @@ def catalan(n):
 list1 = [0]
 for i in range(3): 
     catalan(i)
-print(list1)
+n = 2
+print(list1[n])
+
 
 
 
