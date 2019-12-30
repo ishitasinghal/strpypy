@@ -30,4 +30,11 @@ Output:
 14
 16796
 
+Catalan number:
+Catalan numbers are a sequence of natural numbers that occurs in 
+many interesting counting problems like:
+Count the number of expressions containing n pairs of parentheses 
+which are correctly matched. For n = 3, possible expressions are 
+((())), ()(()), ()()(), (())(), (()()).
+
 #CODE
