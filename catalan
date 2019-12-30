@@ -45,7 +45,7 @@ def catalan(n):
         return 1 
     result = 0 
     for i in range(n): 
-        result += catalan(i) * catalan(n-i-1) 
+        result = result + catalan(i) * catalan(n-i-1) 
     return result 
 for i in range(3): 
     print catalan(i)
