@@ -51,5 +51,6 @@ def catalan(n):
 list1 = []
 for i in range(3): 
     catalan(i)
-retrun list1
+print(list1)
+
 
