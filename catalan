@@ -48,8 +48,10 @@ def catalan(n):
     for i in range(n): 
         result = result + catalan(i) * catalan(n-i-1) 
     return result
-list1 = []
-for i in range(10): 
-    list1.append(catalan(i))
-num = 5
-print(list1[num])
+testcases = input()
+for i in range(int(testcases)):
+    list1 = []
+    for i in range(100): 
+        list1.append(catalan(i))
+    num = input()
+    print(list1[int(num)])
