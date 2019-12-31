@@ -51,6 +51,6 @@ def catalan(n):
 list1 = []
 for i in range(5): 
     list1.append(catalan(i))
-print(list1)
-# num = 2
-# print(list1[num])
+#print(list1)
+num = 2
+print(list1[num])
