@@ -51,6 +51,7 @@ def catalan(n):
 
 for _ in range(testcases):
     num = int(input())
-    print(catalan(2 * num) // (catalan(n + 1) * catalan(num)))
+    print(catalan(2 * num) // (catalan(num + 1) * catalan(num)))
+
 
 
