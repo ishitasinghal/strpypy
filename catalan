@@ -51,7 +51,7 @@ def catalan(n):
 testcases = input()
 for i in range(int(testcases)):
     list1 = []
-    for i in range(100): 
-        list1.append(catalan(i))
     num = input()
+    for i in range(int(num)): 
+        list1.append(catalan(i))
     print(list1[int(num)])
