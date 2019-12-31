@@ -40,17 +40,16 @@ Source: geeksforgeeks
 
 #CODE
 
+testcases = int(input())
 def catalan(n):
-    if n <=1 : 
-        return 1 
-    result = 0
-    for i in range(n): 
-        result = result + catalan(i) * catalan(n-i-1) 
+    result = 1
+    i = n * (n - 1)
+    while n >= 1:
+        result = result * n
+        n = n - 1
     return result
-testcases = input()
-for i in range(int(testcases)):
-    list1 = []
-    num = input()
-    for i in range(int(num)): 
-        list1.append(catalan(i))
-    print(list1[int(num)-1])
+
+for _ in range(t):
+    num = int(input())
+    print(catalan(2 * num) // (catalan(n + 1) * catalan(num)))
+
