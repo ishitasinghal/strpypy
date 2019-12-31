@@ -41,19 +41,16 @@ Source: geeksforgeeks
 #CODE
 
 def catalan(n):
-    if n <=1 : 
-        return 1 
-    result = 0 
+    # if n <=1 : 
+    #     return 1 
+    # result = 0 
+    result = 0
     for i in range(n): 
         result = result + catalan(i) * catalan(n-i-1) 
         list1.append(result)
     return list1
 list1 = [0]
-print(type(list1[0]))
-for i in range(5): 
+for i in range(1,5): 
     catalan(i)
-n = 2
-print(list1[n])
-
-
-
+num = 2
+print(list1[num])
