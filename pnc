@@ -55,4 +55,6 @@ def fact(num):
         return num*fact(num-1)
 # res = fact(n)//(fact(r)*fact(n-r))
 # print(res%(10^9+7))
-print(fact(n))    
+print(fact(n))
+print(fact(r))
+print(fact(n-r)) 
