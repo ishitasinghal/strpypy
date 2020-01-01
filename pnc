@@ -22,6 +22,7 @@ Output:
 6
 
 #CODE
+
 n = 3
 r = 2
 def fact(num):
@@ -29,10 +30,11 @@ def fact(num):
         return 1
     else:
         return num*fact(num-1)
-print("N fact", fact(n))
-print("R fact", fact(r))
+print("nCr")
+print(fact(n)//(fact(r)*fact(n-r)))
 
         
+    
     
         
     
