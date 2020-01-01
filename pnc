@@ -20,3 +20,17 @@ Input:
 Output:
 3
 6
+
+#CODE
+n = 3
+r = 2
+def fact(int num):
+    if(num<=1):
+        return 1
+    else:
+        return num*fact(num-1)
+print("N fact", fact(n))
+print("R fact", fact(r))
+
+        
+    
