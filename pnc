@@ -41,9 +41,8 @@ for i in range(int(testcases)):
             return 1
         else:
             return num*fact(num-1)
-    res = fact(long(n))//(fact(long(r))*fact(long(n)-long(r)))
-    print(res%(10^9+7))
-
+    res = fact(float(n))//(fact(float(r))*fact(float(n)-float(r)))
+    print(int(res%(10^9+7)))
 **************************************************************************
 
 n = 778
