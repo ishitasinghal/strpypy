@@ -44,5 +44,15 @@ for i in range(int(testcases)):
     res = fact(int(n))//(fact(int(r))*fact(int(n)-int(r)))
     print(res%(10^9+7))
 
-        
-    
+**************************************************************************
+
+n = 778
+r = 116
+def fact(num):
+    if(num<=1):
+        return 1
+    else:
+        return num*fact(num-1)
+# res = fact(n)//(fact(r)*fact(n-r))
+# print(res%(10^9+7))
+print(fact(n))    
