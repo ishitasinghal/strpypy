@@ -11,17 +11,16 @@ Output:
 For each testcase, in a new line, find the 
 nCr. Modulus your output to 109+7.
 
-Modulo Explanation
+Modulo Explanation:
 In competitive programming problems, sometimes 
 the actual answer  to a problem lies above the 
 range of 64-bit integer which is not possible 
 to calculate so they want only the  remainder left behind.
 they want answer in the form of (ans)%(10^9+7).
-Therefore to tackle with this problem, you just simply learn two basic rules:
-
+Therefore to tackle with this problem, we simply learn two basic rules:
 1.) (a+b)%m =  (a%m+b%m)%m.
-
 2.) (a*b)%m = (a%m*b%m)%m.
+
 Example:
 Input:
 2
@@ -34,15 +33,16 @@ Output:
 
 #CODE
 
-n = 4
-r = 2
-def fact(num):
-    if(num<=1):
-        return 1
-    else:
-        return num*fact(num-1)
-res = fact(n)//(fact(r)*fact(n-r))
-print(res%(10^9+7))
+testcases = input()
+for i in range(int(testcases)):
+    n, r = input().split()
+    def fact(num):
+        if(num<=1):
+            return 1
+        else:
+            return num*fact(num-1)
+    res = fact(int(n))//(fact(int(r))*fact(int(n)-int(r)))
+    print(res%(10^9+7))
 
         
     
