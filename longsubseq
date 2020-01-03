@@ -26,3 +26,17 @@ AC
 Output:
 3
 2
+
+#CODE
+
+string1 = "ABCDGH"
+string2 = "AEDFHR"
+lenlist = []
+res = [string1[i: j] for i in range(len(string1)) for j in range(i + 1, len(string1) + 1)] 
+for i in res:
+    if(i in string2):
+        lenlist.append(len(i))      
+if(len(lenlist) == 0):        
+    print(0)
+else:
+    print(max(lenlist))       
