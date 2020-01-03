@@ -38,4 +38,8 @@ for _ in range(int(testcases)):
     for i in string1:
         if(i in string2):
             list1.append(string2.index(i))
-    print(len(list1))
+    list2 = list1[:]
+    list1.sort()
+    if(list1==list2):
+        print(len(set(list1)))
+    
