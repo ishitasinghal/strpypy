@@ -30,7 +30,7 @@ Output:
 #CODE
 
 testcases = input()
-for _ in range(int(tesracases)):
+for _ in range(int(testcases)):
     l1, l2 = input().split()
     string1 = input()
     string2 = input()
