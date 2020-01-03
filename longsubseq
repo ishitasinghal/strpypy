@@ -29,10 +29,13 @@ Output:
 
 #CODE
 
-string1 = "ABC"
-string2 = "AC"
-count = 0
-for i in string1:
-    if(i in string2):
-        count = count+1      
-print(count)       
+testcases = input()
+for _ in range(int(tesracases)):
+    l1, l2 = input().split()
+    string1 = input()
+    string2 = input()
+    count = 0
+    for i in string1:
+        if(i in string2):
+            count = count+1      
+    print(count)       
