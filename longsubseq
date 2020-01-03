@@ -34,9 +34,7 @@ for _ in range(int(testcases)):
     l1, l2 = input().split()
     string1 = input()
     string2 = input()
-    count = 0
     for i in string1:
-        for j in range(int(l2)):
-            if(i in string2[j::]):
-                count = count+1
-    print(count)       
+        if(i in string2):
+            list1 = [string2.index(i)]
+            print(list1)
