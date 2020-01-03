@@ -37,6 +37,6 @@ for _ in range(int(testcases)):
     count = 0
     for i in range(int(l1)):
         for j in range(int(l2)):
-            if(string1[::i]==string2[::j]):
+            if(string1[:i]==string2[:j]):
                 count = count+1
-    print(count)       
+    print(count)         
