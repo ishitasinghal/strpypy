@@ -38,4 +38,4 @@ for _ in range(int(testcases)):
     for i in string1:
         if(i in string2):
             list1.append(string2.index(i))
-            print(list1)
+    print(len(list1))
