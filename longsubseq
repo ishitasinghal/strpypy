@@ -29,8 +29,8 @@ Output:
 
 #CODE
 
-string1 = "ABCDGH"
-string2 = "AEDFHR"
+string1 = "ABC"
+string2 = "AC"
 count = 0
 for i in string1:
     if(i in string2):
