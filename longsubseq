@@ -35,7 +35,8 @@ for _ in range(int(testcases)):
     string1 = input()
     string2 = input()
     count = 0
-    for i in string1:
-        if(i in string2):
-            count = count+1      
+    for i in range(int(l1)):
+        for j in range(int(l2)):
+            if(string1[0:i]==string2[0:j]):
+                count = count+1
     print(count)       
