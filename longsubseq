@@ -43,3 +43,25 @@ for _ in range(int(testcases)):
     if(list1==list2):
         print(len(set(list1)))
     
+    ##Using dynamic problem##
+    
+    def lcs(s1,s2):
+    l1=len(s1)
+    l2=len(s2)
+    l = [[None]*(l2+1) for i in range(l1+1)] 
+    for i in range(l1+1):
+        for j in range(l2+1):
+            if i==0 or j==0:
+                l[i][j]=0
+            elif s1[i-1]==s2[j-1]:
+                l[i][j]=l[i-1][j-1]+1
+            else:
+                l[i][j]=max(l[i-1][j],l[i][j-1])
+    return l[l1][l2]
+if __name__ == '__main__':
+   
+    for _ in range(int(input())) :
+        n,m=(int(i) for i in input().split())
+        s1=input()
+        s2=input()
+        print(lcs(s1,s2))
