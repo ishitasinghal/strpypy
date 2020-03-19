@@ -41,6 +41,7 @@ Source: geeksforgeeks
 #CODE
 
 # for given number of testcases
+number of testcases are given by the user.
 
 testcases = int(input())
 def catalan(n):
